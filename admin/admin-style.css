@@ -1,0 +1,160 @@
+
+body {
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+
+.login-container, .form-container, .delete-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="url"], textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: green;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: green;
+  color: black;
+}
+
+
+.admin-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+  color: green;
+  padding: 15px 30px;
+  border-bottom: 2px solid black;
+}
+
+.admin-nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.admin-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.admin-nav ul li {
+  margin-left: 20px;
+}
+
+.admin-nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.admin-nav ul li a:hover {
+  color: green;
+}
+
+.dashboard-container {
+  padding: 40px;
+}
+
+.dashboard-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th, .dashboard-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.dashboard-table th {
+  background-color: yellow;
+  color: green;
+}
+
+.dashboard-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.edit-btn {
+  background-color: green;
+  color: black;
+}
+.edit-btn:hover {
+  background-color: black;
+  color: green;
+}
+
+.delete-btn {
+  background-color: red;
+  color: #fff;
+}
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.cancel-btn {
+  padding: 6px 12px;
+  background-color: gray;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#retdash {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+#retdash:hover {
+  color: green;
+}
+#link {
+  color: black;
+}
+#link:hover {
+  color: green;
+}

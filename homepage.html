@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <title>Portfolio</title>
+</head>
+<body>
+<div id="nav-toggle">
+  <i class="fas fa-chevron-up"></i>
+</div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="admin/login.php">Admin</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>Welcome to My Portfolio</h1>
+        <p id="welcome">Discover my projects and skills</p>
+    </header>
+
+      <main class="container">
+
+    <section id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="Resources/Abir3.jpg">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Abir. I am passionate about HTML,CSS,JavaScript and PHP.<br>
+        I love building creative and functional projects, and I’m<br>
+        always exploring new technologies to improve my skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="project-list"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+      <form id="contact-form" action="contact.php" method="POST" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="sample@gmail.com" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="......" required></textarea>
+        </label>
+        <button type="submit"><i class="fas fa-paper-plane"></i>Send</button>
+        <p id="form-status" class="status"></p>
+      </form>
+      </div>
+    </section>
+  </main>
+  <footer class="foot">
+    <p>&copy; <span id="year"></span>Abir's Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
