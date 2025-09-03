@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST") {
     $stmt->bind_param("sssi", $name, $description, $link, $id);
     if($stmt->execute()) {
         $message = "Project updated successfully!";
-        // Refresh project data
+
         $project['name'] = $name;
         $project['description'] = $description;
         $project['link'] = $link;
